@@ -18,7 +18,7 @@ Scripts and tools for managing provision profiles
 
   `ruby update.rb`
   
-## Update Jenkings with latest provisioning profile
+## Update Jenkins with latest provisioning profile
 
 * Jenkins checks for updates automatically every 2 minutes. If there is a new provisioning profile available, it will be installed automatically.
 * If you need to perfom an immediate build, run the Jenkins job __provisioning-profile__ and then run the job to build your app.
