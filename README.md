@@ -4,9 +4,9 @@ Scripts and tools for managing provision profiles
 
 ## Add a new device
 
-1. Add the device to iTunes Connect.
+1. Add the device to the Apple Developer Portal.
   * If you don't know the account username and password, ask an admin for help.
-2. Add the device to the __HP Wildcard Development Provision__ in iTunes Connect.
+2. Add the device to the __HP Wildcard Development Provision__ in the Apple Developer Portal.
 3. Generate the new provisioning profile and save it over _hp.wildcard.mobileprovision_ file in this repo.
 4. Commit changes and push to __master__.
 
