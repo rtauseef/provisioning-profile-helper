@@ -6,8 +6,8 @@ Scripts and tools for managing provision profiles
 
 1. Add the device to the Apple Developer Portal.
   * If you don't know the account username and password, ask an admin for help.
-2. In the Apple Developer Portal, go to __Certificates, Identifiers & Profiles__ add the device under the section __Devices / All__.
-3. Go to __Provisioning Profiles / Development__ and generate the new provisioning profile for __HP Wildcard Development Provision__. Save it over _hp.wildcard.mobileprovision_ file in this repo.
+2. Add the device to the __HP Wildcard Development Provision__ in the Apple Developer Portal.
+3. Generate the new provisioning profile and save it over _hp.wildcard.mobileprovision_ file in this repo.
 4. Commit changes and push to __master__.
 
 
