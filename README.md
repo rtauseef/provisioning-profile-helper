@@ -21,18 +21,17 @@ Scripts and tools for managing provision profiles
 2. Run the _update.rb_ script.
 
   `ruby update.rb`
-  
+
 ## Update Jenkins with latest provisioning profile
 
 * Jenkins checks for updates automatically every 2 minutes. If there is a new provisioning profile available, it will be installed automatically.
 * If you need to perfom an immediate build, run the Jenkins job __provisioning-profile__ and then run the job to build your app.
 
+## Update your system with latest developer certificate
 
+1. Clone and/or pull the latest version of this repo.
+2. Double-click the file `hp.developer.cert.p12`
+3. Enter the password `hp` when prompted.
+4. The next time you build in Xcode, answer "Alway Allow" when prompted to access your Keychain (during code signing).
 
-
-
-
-
-
-
-
+* Make sure to update to the latest provisioning profile after updating your certificate.
