@@ -12,6 +12,7 @@ sprocket_filename = "#{pp_dir}/#{sprocket_uuid}.mobileprovision"
 
 puts "\n*******************"
 
+# standard development provisioning profile
 found = false
 Dir.glob("#{pp_dir}/*.mobileprovision").each do |file|
 	next if file == current_filename
@@ -23,16 +24,30 @@ Dir.glob("#{pp_dir}/*.mobileprovision").each do |file|
 	end
 end
 
-puts "\nNo old provisioning profiles were found" unless found
+puts "\nNo old wildcard provisioning profiles were found" unless found
 
 if File.exists?(current_filename)
-	puts "\nCurrent provisioning profile already installed:  #{File.basename(current_filename)}"
+	puts "\nWildcard provisioning profile already installed:  #{File.basename(current_filename)}"
 else
-	print "\nCurrent provisioning profile NOT already installed:  #{File.basename(current_filename)}"
+	print "\nWildcard provisioning profile NOT already installed:  #{File.basename(current_filename)}"
 	print "\nCopying #{File.basename(current_filename)}  ⇒  #{pp_dir}... "
 	FileUtils.cp current_profile, "#{current_filename}" 
 	puts 'OK'
 end
+
+ #  sprocket provisioning profile
+found = false
+ Dir.glob("#{pp_dir}/*.mobileprovision").each do |file|
+ 	next if file == sprocket_filename
+ 	if `egrep -a -A 2 "<key>Name</key>" "#{file}"`.include?('Sprocket Dev Push Notification Profile')
+ 		print "\nMoving #{File.basename(file)} to desktop... "
+ 		FileUtils.mv file, "#{ENV['HOME']}/Desktop"
+ 		found = true
+ 		puts 'OK'
+ 	end
+ end
+ 
+puts "\nNo old sprocket provisioning profiles were found" unless found
 
 if File.exists?(sprocket_filename)
 	puts "\nSprocket provisioning profile already installed:  #{File.basename(sprocket_filename)}"
