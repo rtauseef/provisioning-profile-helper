@@ -12,7 +12,8 @@ Scripts and tools for managing provision profiles
   * Select __HP Wildcard Development Provision__ and choose "Edit"
   * Scroll down to the devices section and choose "Select All". Verify in the upper right of the devices box that all devices are selected.
   * Choose "Generate" and save it on top of old _hp.wildcard.mobileprovision_.
-5. Commit changes and push to __master__.
+5. Repeat this process for __Sprocket Dev Push Notification Profile__, saving it over _Sprocket\_Dev\_Push\_Notification\_Profile.mobileprovision_.
+6. Commit changes and push to __master__.
 
 
 ## Update your system with latest provisioning profile
