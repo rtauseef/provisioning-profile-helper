@@ -4,17 +4,10 @@ Scripts and tools for managing provision profiles
 
 ## Add a new device
 
-1. `git pull` the latest changes from __master__.
-2. Add the device to the Apple Developer Portal.
-  * If you don't know the account username and password, ask an admin for help.
-3. In the Apple Developer Portal, go to __Certificates, Identifiers & Profiles__. Add the device under __Devices / All__.
-4. Go to __Provisioning Profiles / Development__ and generate the new provisioning profile for __HP Wildcard Development Provision__  and save it over _hp.wildcard.mobileprovision_ file in this repo.
-  * Select __HP Wildcard Development Provision__ and choose "Edit"
-  * Scroll down to the devices section and choose "Select All". Verify in the upper right of the devices box that all devices are selected.
-  * Choose "Generate" and save it on top of old _hp.wildcard.mobileprovision_.
-5. Repeat this process for __Sprocket Dev Push Notification Profile__, saving it over _Sprocket\_Dev\_Push\_Notification\_Profile.mobileprovision_.
-6. Commit changes and push to __master__.
-
+1. Send UDID(s) to [Paul-Andre Fountain](mailto://paul-andre.fountain@hp.com) and/or [Jaime Cardenas](mailto://jaime.cardenas@hp.com) and request new provisioning profiles. Proceed to step 2 once new profiles are received.
+2. `git pull` the latest changes from __master__.
+3. Save the profile file(s) received from PAF/Jaime in the same directory as this repo, renaming the file(s) to replace the corresponding file(s) in this repo.
+4. Commit changes and push to __origin/master__.
 
 ## Update your system with latest provisioning profile
 
@@ -26,7 +19,7 @@ Scripts and tools for managing provision profiles
 ## Update Jenkins with latest provisioning profile
 
 * Jenkins checks for updates automatically every 2 minutes. If there is a new provisioning profile available, it will be installed automatically.
-* If you need to perfom an immediate build, run the Jenkins job __provisioning-profile__ and then run the job to build your app.
+* If you need to perform an immediate build, run the Jenkins job __provisioning-profile__ and then run the job to build your app.
 
 ## Update your system with latest developer certificate
 
