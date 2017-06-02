@@ -5,20 +5,32 @@ pp_dir = "#{ENV['HOME']}/Library/MobileDevice/Provisioning Profiles"
 profiles = [
 	{
 		name: 'HP Pilot WildCard Develop Provision',
-		file: 'hp.wildcard.mobileprovision'
+		file: 'hp.wildcard.dev.mobileprovision'
 	},
 	{
 		name: 'HP Sprocket Development Provision',
-		file: 'hp.sprocket.app.mobileprovision'
+		file: 'hp.sprocket.app.dev.mobileprovision'
 	},
 	{
 		name: 'HP Sprocket Action Develop Provision',
-		file: 'hp.sprocket.action.mobileprovision'
+		file: 'hp.sprocket.action.dev.mobileprovision'
 	},
 	{
 		name: 'HP Sprocket Push Notification Develop Provision',
-		file: 'hp.sprocket.push.notification.mobileprovision'
+		file: 'hp.sprocket.push.notification.dev.mobileprovision'
 	},
+	{
+		name: 'HP Sprocket AdHoc Distrib Provision',
+		file: 'hp.sprocket.app.ad.hoc.mobileprovision'
+	},
+	{
+		name: 'HP Sprocket Action AdHoc Distribution Provision',
+		file: 'hp.sprocket.action.ad.hoc.mobileprovision'
+	},
+	{
+		name: 'HP Sprocket Push Notification AdHoc Provision',
+		file: 'hp.sprocket.push.notification.ad.hoc.mobileprovision'
+	}
 ]
 
 puts "\n*******************"
