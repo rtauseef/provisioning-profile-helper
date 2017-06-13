@@ -4,6 +4,10 @@ pp_dir = "#{ENV['HOME']}/Library/MobileDevice/Provisioning Profiles"
 
 profiles = [
 	{
+		name: 'HP Wildcard Development Provision',
+		file: 'hp.wildcard.local.dev.mobileprovision'
+	},
+	{
 		name: 'HP Pilot WildCard Develop Provision',
 		file: 'hp.wildcard.dev.mobileprovision'
 	},
