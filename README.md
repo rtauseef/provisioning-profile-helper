@@ -5,8 +5,12 @@ Scripts and tools for managing provision profiles
 ## Add a new device
 
 1. Send UDID(s) to [Paul-Andre Fountain](mailto://paul-andre.fountain@hp.com) and/or [Jaime Cardenas](mailto://jaime.cardenas@hp.com) and request new provisioning profiles. Proceed to step 2 once new profiles are received.
+- Make sure to include a descriptive name for each device. This name _must_ include the device owner's name or organization and the device type. This is _critical_ for end-of-year device clean up.
+- Examples: `Chrissy Harris' iPhone 7` `MacKiev iPad Air` `QA iPhone 6 Plus`
 2. `git pull` the latest changes from __master__.
 3. Save the profile file(s) received from PAF/Jaime in the same directory as this repo, renaming the file(s) to replace the corresponding file(s) in this repo.
+- For SMS and Cards there is a single wildcard profile.
+- For Sprocket there are six profiles: developement and ad-hoc, app, print extension, and notification extension.
 4. Commit changes and push to __origin/master__.
 
 ## Update your system with latest provisioning profile
