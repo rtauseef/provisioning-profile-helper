@@ -1,9 +1,3 @@
-# provisioning-profile-helper
-
-Scripts and tools for managing provision profiles
-
----
-
 # Local Development Setup
 
 ## Update your system with latest provisioning profile
@@ -21,8 +15,6 @@ Scripts and tools for managing provision profiles
 4. The next time you build in Xcode, answer "Alway Allow" when prompted to access your Keychain (during code signing).
 
 > __Important:__ Make sure to update to the latest provisioning profiles after updating your certificate.
-
----
 
 # Admin Tasks
 The following instructions are only for people with admin access.
