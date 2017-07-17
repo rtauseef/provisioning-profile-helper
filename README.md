@@ -31,5 +31,5 @@ The following instructions are only for people with admin access.
 
 ## Update Jenkins with latest provisioning profile
 
-* The is a webhook that triggers a Jenkins build whenever there is push to _master_ branch. This includes merging pull requests. If there is a new provisioning profile available, it will be installed automatically.
+* There is a webhook that triggers a Jenkins build whenever there is push to _master_ branch. This includes merging pull requests. If there is a new provisioning profile available, it will be installed automatically.
 * If you need to perform an immediate build, run the Jenkins job __provisioning-profile__ and then run the job to build your app.
